@@ -1,0 +1,171 @@
+
+Here are a list of things/bugs that need 2b done/fixed:
+
+Event Managment Page
+---------------------
+
+current things in the code to address:
+
+- Do not pair caddy if there if the event details are not submitted within its respective event page.
+- add arrival time ("hour prior" for example) as a field in the event details form 
+- add functionality to select multiple members for one pairing with one caddy
+
+---- displaying the correct information/format for event page depending on pairings.json file with holds all event information (default)
+
+In the corner, create a button that creates a new event. Once it is clicked, the detail event form loads onto the page to be filled and saved, then will populate on the screen.
+If there are no events, then simply display "There are no current events"
+If there is only one event created, display that event in event management screen
+If there are multiple events, then display the first event.
+
+---- 
+whatever event is being currently displayed, all of it's event details and data on whether a caddy or member is paired will be associated it.
+- this information will be used to display different details about multiple events.
+
+---
+
+the manager will be able to switch between events (if there are multiple) through a drop down option at the top of the page that when clicked will display that event page with its respective event details
+there will be an option to edit the current event 
+there will also be an option to create a new event and the form field will poopulate again with the ability to save
+
+----
+
+As for the pairing capabilities within the event management page, there will be a system of displaying caddy & member names, along with their respective status for the event that is currently displayed on the even management page
+
+One way to indicate status is to have a color key usuing css and javascript, filling in  with color the container that encloses the names.
+
+a caddy and member, whether displayed in the drop down within the search bar or highlighted in the pairing field or displayed within any list will have the following color key :
+
+Caddy Key:
+
+available (green)
+waiting response (yellow) 
+not available (grey) 
+paired (red)
+
+this colors persist attached to the caddy associated with this event.
+
+Member's Key paired status follows a similar color scheme :
+
+paired (green)
+unpaired (red)
+
+
+--- obtaining the status of caddies and members ---
+
+
+members :
+
+Members will not be communicating with this program, therefore the roster of members signed up for the event is given to caddy manager
+He will enter manually (eventually we will integrate with westmorelands golfdigest API to avoid this tedious task)
+
+this will exist inside a form field container that exists on its respective event page and saves data to pairings.json inside "memberList". 
+- this will be in the form of a list of the members within one group.
+
+
+inside the form field, the manager can can select member names by searching through the entire member lists.
+- this will be a form field of up to 4 members, each with search bar cabilities like we previously got working in our latest version
+- there exists a "guest" option" for each for the member fields, G: checkmark box, to indicate that this player is a guest of this member.
+- at least one member needs to be selected for the information to be saved
+
+Caddies: 
+
+
+The manager can manually mark the caddy as available // is this too tedious?
+
+the communication center 
+Send invite to all caddies
+Send invite to particulatr caddy
+send to multiple caddys
+
+Should we display if they been texted... no only if they have signed up 
+Caddies can also just text the even name like "highlander", for example, to confirm or yes after a sent text..
+
+
+caddies can get the status of their looper info, upcoming loops, requests, etc...
+
+
+--- displaying the list of member roster groups and list of caddies.
+
+the respective lists (2 lists) of caddies and members will be filtered by their color status according to the color key scheme discussed above. 
+- 
+- 
+- 
+
+
+Ticket Management Page
+
+Generate tickets button 
+- when this is clicked, all paired caddies will be texted their respective arrival times
+- if a caddy has not yet responded or not available and have been paired, then warn the manager with a pop window "are you sure you want to proceed, these caddies: "xxx, yyy, and zzz" are not available or have not responded.
+        - the manager can go back and not send, or can choose to proceed.
+
+
+**TODO::// I need a workflow diagram of communication between phone and this program running on manager's computer... all the different scenario
+
+
+
+What if there are different tee times? and multiple days?
+
+
+
+Communication Page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Member list will be a list of the starting hole, tee time
+
+What if there are multiple days and multiple tee times for the same member?
+
+If there is a shotgun, the general event details will be the same but if there are tee times, the things get a bit more complex for storing this information
+
+
+for example
+
+aberdeen 
+
+:
+
+friday 27 holes 3 different starting times and holes, 
+saturday 18 holes 2 different starting times and holes
+
+if there are tee times
+
+ member name, member name, tee time, 2, hole
+
+ just send a photo of the member's sheet!
+
+ ... we will just plan for a shotgun start for now
