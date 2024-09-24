@@ -4,30 +4,75 @@ Here are a list of things/bugs that need 2b done/fixed:
 Event Managment Page
 ---------------------
 
+
+cleaning up logic, aestectics, and functionality, smoothness
+----------
+are you sure you want to add a caddy that is not signed up? 
+if a caddy is not in the caddylist, then warn the manager with a pop up asking if he would like to add this caddy to data/caddies.json file, asking for him to enter in a form field of caddies name "lastname, first" and their phone number
+- need to be in form of last, first (finish... it needs to be abel to handle invalid caddies i just tried a membe that wasnt in it)
+
+
+make the caddy search, the searcha nd selector for the caddy roster and same with memeber search for the member roster
+
+remove teh ranodm first member search with no search abilities
+
+close other events when clicking on iteration
+fix how the caddy search dropdown is popped up when launching the program without clicking on the caddy search bar.
+
+caddy search bar doesnt work again after selecting an option for the first time
+
+make the caddy roster not only searchable but also you can select a caddies name from the scrollable div which enters the name value in the caddy search box.
+
+
+when the manager experiences the pop up wanring him that he is entering a member not in the member roster and adding him to it, that he needs to enter the hole from slectors of numebr 1-18 and letters A and B. make sure this addition doesn't break any group rules
+
+
+add the ability to search pairings by pairedCaddies
+
+generate a "all  +"#" of memebrs have been added with "+" caddies.
+
+design idea:
+
+make the 18 holes in a larger 6 x 3 grid to cover the 18 holes. and move it below the caddy and pairing cloumn sections
+
+move the pairing caddy and memebrs button more up in the page
+
+
+tickeing and communciation center!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 current things in the code to address:
 
+!!!
+make the available caddies just caddies?
+list all the caddies like how it is in availabel caddies ection now . do that for members section/coloumn too
+
+default is not sure, if paired then red, available - green 
+
 - Do not pair caddy if there if the event details are not submitted within its respective event page.
-- add arrival time ("hour prior" for example) as a field in the event details form 
+- add arrival time ("hour prior" for example) as a field in the communication center
 - add functionality to select multiple members for one pairing with one caddy
-
----- displaying the correct information/format for event page depending on pairings.json file with holds all event information (default)
-
-In the corner, create a button that creates a new event. Once it is clicked, the detail event form loads onto the page to be filled and saved, then will populate on the screen.
-If there are no events, then simply display "There are no current events"
-If there is only one event created, display that event in event management screen
-If there are multiple events, then display the first event.
-
----- 
-whatever event is being currently displayed, all of it's event details and data on whether a caddy or member is paired will be associated it.
-- this information will be used to display different details about multiple events.
-
----
-
-the manager will be able to switch between events (if there are multiple) through a drop down option at the top of the page that when clicked will display that event page with its respective event details
-there will be an option to edit the current event 
-there will also be an option to create a new event and the form field will poopulate again with the ability to save
-
-----
 
 As for the pairing capabilities within the event management page, there will be a system of displaying caddy & member names, along with their respective status for the event that is currently displayed on the even management page
 
@@ -89,8 +134,7 @@ caddies can get the status of their looper info, upcoming loops, requests, etc..
 the respective lists (2 lists) of caddies and members will be filtered by their color status according to the color key scheme discussed above. 
 - 
 - 
-- 
-
+-
 
 Ticket Management Page
 
@@ -112,14 +156,28 @@ Communication Page
 
 
 
+FINISHED, 2nd iteration {
 
+---- displaying the correct information/format for event page depending on pairings.json file with holds all event information (default)
 
+In the corner, create a button that creates a new event. Once it is clicked, the detail event form loads onto the page to be filled and saved, then will populate on the screen.
+If there are no events, then simply display "There are no current events"
+If there is only one event created, display that event in event management screen
+If there are multiple events, then display the first event.
 
+---- 
+whatever event is being currently displayed, all of it's event details and data on whether a caddy or member is paired will be associated it.
+- this information will be used to display different details about multiple events.
 
+---
 
+the manager will be able to switch between events (if there are multiple) through a drop down option at the top of the page that when clicked will display that event page with its respective event details
+there will be an option to edit the current event 
+there will also be an option to create a new event and the form field will poopulate again with the ability to save
 
+----
 
-
+}
 
 
 
